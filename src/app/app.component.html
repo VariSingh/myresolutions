@@ -1,13 +1,12 @@
 <div class="container">
+  <div>
       <h2 style="text-align:center;">My New Year Resolutions</h2>
-      <input type="text" placeholder="What's your resolution?">
+      <input type="text" [(ngModel)]="addResolution.name" (keyup)="onKeyUp($event)" placeholder="What's your resolution?">
+      {{ addResolution | json}}
       <ul class="resolution-list">
-        <li>Resolution 1</li>
-        <li>Resolution 2</li>
-        <li>Resolution 3</li>
-        <li>Resolution 4</li>
+        <li *ngFor="let res of resolutions;let i=index;" (click)="editResolution(res)">{{ res.name }}</li>
       </ul>
-      <button class="btn btn-primary">Add new item<i class="fas fa-plus"></i></button>
+  </div>
 </div>
 
 

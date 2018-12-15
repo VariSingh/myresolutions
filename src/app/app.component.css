@@ -1,0 +1,17 @@
+ul.resolution-list{
+    list-style-type: none;
+}
+.resolution-list li{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color:#dedede;
+    padding: 15px 15px;
+    background:#fff;
+}
+.resolution-list li:last-child{
+    border-bottom:1px solid;
+}
+h2{
+    margin: 20px 5px;
+}  
